@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e5ec;
+}
+
+ul {
+  padding: 40px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+}
+
+input {
+  visibility: hidden;
+  display: none;
+  -webkit-appearance: none;
+}
+
+li {
+  margin: 2%;
+}
+
+li label i {
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #e0e5ec;
+  box-shadow: -7px -7px 20px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0001, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+}
+
+li label input:checked ~ i {
+  box-shadow: 4px -4px 6px 0px rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0px rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0px rgba(116, 125, 136, 0.3);
+}
